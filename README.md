@@ -50,17 +50,17 @@ Parses ISO 8601 strings into Date objects. Returns null on invalid input.
 
 ## Install
 
+**Personal install** (available in every project):
+
 ```bash
-# 1. Create the skill directory
 mkdir -p ~/.claude/skills/cost-governor
-
-# 2. Download the skill
-curl -o ~/.claude/skills/cost-governor/SKILL.md \
+curl -fsSL -o ~/.claude/skills/cost-governor/SKILL.md \
   https://raw.githubusercontent.com/Feli2arias/cost-governor/main/SKILL.md
-
-# 3. Activate in Claude Code
-/cost-governor
 ```
+
+**Project install** (shared with your team via the repo): run the same commands from the project root, replacing `~/.claude/skills` with `.claude/skills`.
+
+Start a new Claude Code session so the skill is picked up. Claude loads it automatically when the task matches its description, or you can invoke it manually with `/cost-governor`.
 
 ---
 
